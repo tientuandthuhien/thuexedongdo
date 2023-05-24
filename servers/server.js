@@ -2,6 +2,9 @@ const express = require('express');
 const sql = require('mssql');
 
 const app = express();
+// Enable CORS
+app.use(cors());
+
 const port = 3000;
 const config = {
     user: 'sa',

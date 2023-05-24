@@ -9,7 +9,7 @@ const config = {
     server: '113.160.225.134',
     database: 'CLSK12MANAGEDB',
     options: {
-      encrypt: true // True: Nếu sử dụng kết nối mã hóa
+      encrypt: false // True: Nếu sử dụng kết nối mã hóa
     }
   };
   

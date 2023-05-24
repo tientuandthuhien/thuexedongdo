@@ -22,7 +22,7 @@ export class HomePageComponent {
  
   getCarsFromServer() {
     // const url = 'http://localhost:3000/getCars'; // Replace with the appropriate backend server URL
-    const url  = this.apiUrl + '/getCars'
+    const url  = this.apiUrl + '/cars'
     this.http.get(url).subscribe(
       (response) => {
         console.log(response); // Handle the response from the server

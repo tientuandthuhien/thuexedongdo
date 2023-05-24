@@ -3,7 +3,12 @@ const sql = require('mssql');
 
 const app = express();
 // Enable CORS
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000', // Specify a specific origin
+  methods: ['GET', 'POST'], // Specify allowed HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'] // Specify allowed headers
+}));
+
 
 const port = 3000;
 const config = {
